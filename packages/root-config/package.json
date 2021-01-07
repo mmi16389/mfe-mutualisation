@@ -1,0 +1,27 @@
+{
+  "name": "root-config",
+  "version": "1.0.0",
+  "description": "Root config Application to load single spa MFE",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-cli serve --port 9000",
+    "serve": "serve dist -p 3002",
+    "build": "webpack --mode production",
+    "clean": "rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^4.5.0",
+    "serve": "^11.3.2",
+    "single-spa": "^5.8.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0"
+  }
+}
