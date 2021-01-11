@@ -6,4 +6,12 @@ registerApplication({
     activeWhen: "/",
 });
 
+registerApplication({
+    name: "@cnamts/app-login",
+    app: () => System.import("app-login"),
+    activeWhen: "/vue3",
+});
+
+
+
 start();

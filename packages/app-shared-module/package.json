@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port=3000",
+    "start": "vue-cli-service serve --port=3001",
     "build": "vue-cli-service build",
-    "serve:standalone": "vue-cli-service serve --mode standalone"
+    "start:standalone": "vue-cli-service serve --mode standalone"
   },
   "dependencies": {
     "core-js": "^3.6.5",

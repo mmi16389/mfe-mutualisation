@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env = {}) => ({
   entry: path.resolve(__dirname, "src/index.js"),
@@ -33,6 +34,14 @@ module.exports = (env = {}) => ({
       templateParameters: {
         isLocal: env && env.isLocal === "true",
       },
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "public/js/config.js"),
+          to:'js'
+        },
+      ],
     }),
   ]
 });
